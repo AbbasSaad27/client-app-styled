@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      h1 {
+        font-weight: 500;
+      }
+      .container {
+        padding-top: 40px;
+      }
+      textarea {
+        resize: none;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px 0 20px;
+        width: 100%;
+        font-family: inherit;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+      }
+      ul {
+        margin: 20px 0;
+        padding: 0 30px;
+        font-size: 16px;
+      }
+      li {
+        list-style: none;
+      }
+      .check-box-label {
+        margin-left: 40px;
+      }
+      button {
+        padding: 5px 10px;
+        cursor: pointer;
+        font-family: inherit;
+        margin-left: auto;
+        display: block;
+        font-weight: 500;
+      }
+      input[type="checkbox"] {
+        width: 13px;
+        height: 13px;
+        border: 1px solid rgb(43, 43, 43);
+        border-image: none;
+        box-shadow: 1.5px 1.5px 0 0 gray;
+        cursor: pointer;
+        border-radius: unset !important;
+      }
+      @media only screen and (max-width: 675px) {
+        .container {
+          width: 90%;
+        }
+        h1 {
+          font-size: 18px;
+        }
+        ul {
+          margin-top: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>What would you like to say?</h1>
+      <textarea rows="15" cols="50" placeholder="[ Type text here ]"></textarea>
+      <h1>Where would you like to say it?</h1>
+      <ul>
+        <li>
+          <input type="checkbox" name="device" id="Office" value="Office" />
+          <label for="Office" class="check-box-label">Office</label>
+        </li>
+        <li>
+          <input type="checkbox" name="device" id="Kitchen" value="Kitchen" />
+          <label for="Kitchen" class="check-box-label">Kitchen</label>
+        </li>
+        <li>
+          <input type="checkbox" name="device" id="Bedroom" value="Bedroom" />
+          <label for="Bedroom" class="check-box-label">Bedroom</label>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="device"
+            id="Kidsroom"
+            value="Kids' room"
+          />
+          <label for="Kidsroom" class="check-box-label">Kids' room</label>
+        </li>
+      </ul>
+      <button type="button">Speak</button>
+    </div>
+  </body>
+</html>
